@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby's Creations</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="background-image" style="background-image: url('https://live.staticflickr.com/5580/31210269761_30fc34aa6a_b.jpg')"></div>
+        <div class="hero-content-area">
+            <h1>Toby's Creations</h1>
+            <h3>An online coding portfolio</h3>
+            <div class="hero-links">
+                <p><a href='#profile'>About Me</a></p>
+                <p></p><a href='#codingStory'>My Coding Story</a></p>
+                <p></p><a href='#pythonDice'>Coding Projects</a></p>
+                <p></p><a href='#contact'>Contact Me</a></p>
+             </div>
+            <p>Or just scroll...</p>
+        </div>
+    </section>
+
+    <section id='profile' class='profile'>
+        <div>
+          <h3 class='title'><a>About Me</a></h3>
+            <p>After five years working as an editor for a publishing company in the UK, I left London to find adventure and a fresh start in New Zealand.
+            <p>Since April, I've been teaching myself to code using online courses, such as Codecademy.com's Computer Science course and Colt Steele's Wed Development Bootcamp series. Having really enjoyed this entry into the world of software and web development, I'm now keen to pick up a professional role to improve my knowledge and skills.</p>
+            <p>I am diligent, organised and hardworking, with strong communication skills and a keen attention to detail. I enjoy problem solving, working in teams and the satisfaction of a job well done!</p>
+            <p>In my spare time, I enjoy playing and watching football, tabletop games,  painting and photography.</p>
+            <p>I currently live in Auckland on a WHV valid until March 2021 and have the option to extend to February 2022. My partner is a New Zealand citizen, so I have the option of applying for a partner visa should we wish to stay beyond then.</p>
+        </div>
+        <ul class="grid">
+            <li class='small' style='background-image: url("https://live.staticflickr.com/5456/30503029944_87e93e1c9b_b.jpg");'></li>
+            <li class='large' style='background-image: url("https://live.staticflickr.com/3919/14333264601_625dd8056a_b.jpg");'></li>
+        </ul>
+        <hr> 
+    </section>
+
+    <section id="codingStory" class="codingStory">
+        <div>
+            <h3 class='title'>My Coding Story</h3>
+            <p>I first came to coding in March 2019, when a friend told me it was 'literally the best job in the world'. What a sell – 'This is something I've got to try!' I thought.</p>
+            <p>So I started by signing up to Codecademy.com (on recommendation) and spent the next few months waking up first thing in the morning to do their Computer Science course before my day job. I learnt the basics of Python 3, core software tools such as git and the command line and basic algorithms and programming principles.</p>
+            <p>I found I had very little motivational issues (coding is really fun!) and even spent my lunch breaks working on problems I'd struggled with in the morning. Next I came up with my own challenges outside of the codecademy's suggestions. I also joined a coding club in the office (which was criminally under-attended).</p>  
+            <p>Over the autumn I decided my job exit strategy would be to go on an adventure with my partner – we'd go travel South America and make our way to New Zealand where she had family and citizenship. I set aside learning code in favour of learning Spanish and things went a little quiet on the coding front. I decided that I could enrol in a development course when I got to New Zealand.</p>
+            <p>Jump forward to April 2020, where I found myself locked down in New Zealand (having only just made it into the country) with very little to do. It seemed a perfect opportunity to pick up coding again.</p>
+            <p>At the time Colt Steele had started a Daily Code Challenge about web development, so I started following each day. However, the pace of the course wasn't speedy enough for my needs. I ended up buying a few of his Udemy courses for the sum total of around US$30 and powered through them over the course of the next few weeks. This introduced me to a much wider range of content, from HTML, CSS and Javascript, to Node.js, npm and Express. Much of what I did you'll find below.</p>
+            <p>However, soon lockdown came to an end and finances became an issue, so we packed our bags and headed over to Te Puke in the Bay of Plenty where we could work in Level 3 picking kiwifruit. Since then, I've been trying to maintain my coding skills as I've travelled through the North Island, doing a little learning here and there, all while working to fund my travels.</p>
+            <p>Now, having arrived back in Auckland, I'm looking for some more permanent work that will help me develop some professional coding experience!</p>
+        </div>
+        <hr>
+    </section>
+
+    <section id="pythonDice" class="codingProject">
+        <h3><a class="title" href="https://github.com/tobyjack27/PythonDice/blob/master/Dice2.py">Python Dice</a></h3>
+        <a href="https://github.com/tobyjack27/PythonDice/blob/master/Dice2.py"><img class="image" id="pythondiceimage" src="assets/images/pythondice.png"></a>
+        <p>This was the first programme I wrote by myself. I decided I wanted to use my newfound python skills to produce a terminal app that would give you the result of a dice roll (I actually wrote the initial code on iOS notes using my phone). You can select any number of dice (more than zero that is) and you will receive a line of text telling you your results.</p>
+        <p>Having got the core input and output functionality working, I spent a fair amount of time thinking of ways that someone could break the programme, and added in catches to prevent user input error. This included someone trying to roll less than one die, or inputting letters rather than numbers. Negative numbers would be converted to their positive equivalent (-1 => 1) and words would throw an input error.</p>
+        <ul class="keywords">
+            <li>Python</li>
+            <li>Terminal/Command Line</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="colourGame" class="codingProject">
+        <h3><a class="title" href="https://tobyjack27.github.io/ColourGame/">Colt's Colour Game</a></h3>
+        <a href="https://tobyjack27.github.io/ColourGame/"><img class='image image-shadow' src='assets/images/colourgame.png'></a>
+        <p>The aim of this project was to make a simple game, in which players would have to choose the colour that matched the RGB code given in the header. The original game could be made harder or easier by increasing or reducing the number of tiles to choose from.</p>
+        <p>To improve the game I adjusted the difficulty system. Realising that the diffculty came in how similar the colours were, rather than the number of them, I rewrote the colour generation function so that squares were more or less similar depending on whether the game was in 'hard' or 'easy' mode. The original script simply picked colours by randomly generating an RGB code.</p>
+        <p>I achieved this by regulating how the rgb code for each square was generated. For the 'hard' mode, the programme generates a number between 1 and 6 (a) and a number between 1 and 256/6 (b). It then adds number a to number b multiplied by 256/6 to generate each colour value. This means that all of the rgb values are taken from a small sub-section of the range of 1 to 256.</p>
+        <p>For easy mode, the programme generates an array containing numbers 1 to 18 in a random order. It then generates a number between 256/12 (a) and then pops off a number from the array (b). It then adds number a to number multiplied by 256/12 to generate the first value. For each of the following values, it pops another number (b) off the array, so each value comes from a different sub-section of the possible range.</p>
+        <p>I wanted to keep the option of playing with either three or six squares, so I added buttons to control the number of squares that would appear.</p> 
+        <ul class="keywords">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Github Pages</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="codingProject">
+        <h3><a class="title" href="https://safe-island-65223.herokuapp.com/">Colt's YelpCamp</a></h3>
+        <a href="https://safe-island-65223.herokuapp.com/"><img class='image image-shadow' src='assets/images/yelpcamp.png'></a>
+        <p>YelpCamp is a fully-functional review site, enabling users to sign up and post campsites and comments on other people's uploads. This process taught me the basics of full stack development, looking at both the backend server code, using frameworks (Node.js), libraries (Bootstrap) and databases (MongoDB).</p>
+        <p>The initial website only supported image urls, so I implemented an image upload system using cloudinary, allowing users to upload their own imagery. I also added animations, including a loading graphic that runs during the upload process. An admin user is always useful to moderate uploads, so I created a user that could edit and delete posts regardless of who created them. Finally, I adjusted the flash messages so that they showed up on login, as well as just sign-up and logging out.</p>
+        <p>My additions to the app gave me the opportunity to learn about asynchronous javascript functions. I got a large amounts of unhandled promise rejection errors, before realising that while the asynchrousnous functions I'd added all had catches – the code initially used as part of the code-along didn't!</p>
+        <ul class="keywords">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Passport</li>
+            <li>Bootstrap</li>
+            <li>GoormIDE</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="codingProject">
+        <h3><a href="https://tobyjack27.github.io/SunAnimation/">Keyframes Animation</a></h3>
+        <div id="keyframes-image">
+            <a href="https://tobyjack27.github.io/SunAnimation/"><img class="image image-shadow" src="assets/images/keyframes.png"></a>
+        </div>
+        <div id="keyframes-animation" class="sky image image-shadow">
+            <div class="sun"></div>
+            <div class="ground"></div>
+        </div>
+        <p>This sun and sky animation was a simple introduction to keyframes. One of the hardest aspects of this piece of coding was trying to make it fit into a smaller part of a responsive web page! In the end I settled for creating an animation of a fixed size and at the screen size it became too big for the page, I added an image that linked to the full version of the animation on a separate page. You can access that page whatever sized window you are viewing this text from, as the link in the title above will take you there!</p>
+        <ul class="keywords">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Keyframes</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section class="codingProject">
+        <h3><a href="https://tobyjack27.github.io/FetchRequests/">API Fetch Requests</a></h3>
+        <a href="https://tobyjack27.github.io/FetchRequests/"><img class="image image-shadow" src="assets/images/apirequests.png"></a>
+        <p>A single page exercise to learn about API fetch requests in single-page apps.</p>
+        <ul class="keywords">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Me</h2>
+        <p>I can be contact via email at <span class="email">tjmann93@hotmail.com</span>.</p>
+    </section>
+
+</body>
+</html>

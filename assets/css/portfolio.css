@@ -188,6 +188,10 @@ section p {
     opacity: 1;
 }
 
+.codelink {
+    margin-bottom: 20px;
+}
+
 h3 hr {
     padding: 0;
     margin: 0;
